@@ -1,0 +1,357 @@
+Atividade de Revisão
+
+Aluno: Filipe Miranda Ávila Ribeiro
+ 
+
+1) O que é o retorno NaN em Javascript? Cite um tipo de condição em que este tipo pode ser gerado.
+
+ 
+
+R: O valor NaN em JavaScript significa "Not a Number" e representa um resultado que não pode ser interpretado como número. Apesar disso, ele pertence ao tipo Number. Isso pode ocorrer, por exemplo, quando tentamos realizar uma operação matemática com algo que não é numérico, como dividir um número por uma string não numérica.
+
+ 
+
+2. É possível adicionar uma configuração CSS de múltiplas formas em um código HTML. Cite essas formas e dê exemplos de cada uma. Cite também a diferença entre utilizar cada uma dessas formas.
+
+ 
+
+R: No HTML, estilos CSS podem ser aplicados de três modos principais: diretamente no elemento (inline), dentro do próprio arquivo HTML (interno), ou através de um arquivo separado (externo).
+
+Inline: feito com o atributo style na tag. Ex: <p style="color: red;">Texto</p>
+
+Interno: colocado na tag <style> dentro do <head>.
+
+Externo: utilizando um arquivo .css linkado com a tag <link>.
+Cada método tem sua utilidade. O inline é rápido, mas pouco escalável. O interno é bom para páginas simples. O externo é o ideal para reutilização e organização em projetos maiores.
+ 
+
+3. Explique a diferença entre as tags <div> e <span>. Dê exemplos de quando usar cada uma.
+
+R: As tags <div> e <span> são usadas para agrupar elementos, mas funcionam de maneira diferente.
+A <div> é um elemento de bloco, o que significa que ocupa toda a largura disponível e gera uma quebra de linha. É indicada para separar seções maiores de conteúdo.
+Já o <span> é um elemento inline e serve para marcar partes específicas dentro de uma linha de texto, como para aplicar um estilo específico a uma palavra.
+
+4. Descreva o propósito da tag em um documento HTML e cite pelo menos três elementos que podem estar dentro dela.
+
+R: A tag <head> contém informações que descrevem o documento HTML, mas que não são visíveis diretamente na página.
+Dentro dela, podem estar:
+
+<title>: define o nome da aba do navegador
+
+<meta>: define metadados como codificação de caracteres e descrição
+
+<link>: conecta arquivos externos, como folhas de estilo CSS
+
+ 
+
+5. Diferencie as listas ordenadas (<ol>) das listas não ordenadas (<ul>). Crie um exemplo de cada.
+
+R: Listas ordenadas (<ol>) apresentam os itens com uma sequência numérica, indicando uma ordem. Já listas não ordenadas (<ul>) usam marcadores simples (como bolinhas) e não indicam ordem.
+Exemplo de <ol>:
+
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+
+
+Exemplo de <ul>:
+
+<ul>
+  <li>Banana</li>
+  <li>Maçã</li>
+</ul>
+ 
+
+6. O que significa a propriedade display no CSS? Compare o comportamento de block, inline e inline-block.
+
+R: A propriedade display define como os elementos são renderizados na página.
+
+block: ocupa toda a largura disponível e começa em nova linha.
+
+inline: fica na mesma linha de outros elementos e só ocupa o espaço necessário.
+
+inline-block: mantém o posicionamento inline, mas permite alterar largura e altura, como um bloco.
+ 
+
+7. Explique o que é o Box Model no CSS e descreva suas partes de dentro para fora.
+
+R: O Box Model é um conceito no CSS que representa a estrutura de uma caixa ao redor de cada elemento. Suas partes, do centro para fora, são:
+
+content: onde fica o conteúdo do elemento (texto, imagem)
+
+padding: espaço interno entre o conteúdo e a borda
+
+border: a linha que delimita o elemento
+
+margin: espaço externo, separando o elemento de outros
+
+ 
+
+8. Qual é a função das tags semânticas no HTML5, como <header>, <section>, <article> e <footer>? Dê exemplos de uso.
+
+
+R: Tags semânticas ajudam a descrever o papel de cada parte do conteúdo em uma página.
+
+<header>: cabeçalho da página ou seção
+
+<section>: agrupa conteúdos relacionados
+
+<article>: conteúdo independente e reutilizável
+
+<footer>: rodapé com informações finais
+Essas tags tornam o HTML mais compreensível para desenvolvedores, navegadores e leitores de tela.
+ 
+
+ 
+
+9. Explique o que é e para que serve o atributo target="_blank" em um link. Quais cuidados de segurança devem ser tomados ao utilizá-lo?
+
+
+R: O atributo target="_blank" faz com que um link abra em uma nova aba do navegador. No entanto, isso pode abrir brechas de segurança, então é recomendado usá-lo junto com rel="noopener noreferrer" para impedir que a nova página tenha acesso à original via window.opener.
+ 
+
+ 
+
+10. O que é a propriedade flex no CSS e como ela é usada?
+
+
+R: A propriedade flex é usada para distribuir espaço entre itens dentro de um contêiner com display: flex. Ela determina como o item cresce, encolhe e qual seu tamanho inicial.
+Exemplo:
+
+.item {
+  flex: 1; /* divide igualmente o espaço disponível */
+}
+
+ 
+
+ 
+
+11. O que são transições (transition) no CSS e como podem ser usadas para criar efeitos de animação simples? Crie um exemplo básico.
+
+
+R: Transições no CSS permitem que mudanças em propriedades ocorram suavemente, ao invés de instantaneamente. Isso cria efeitos visuais sem usar JavaScript.
+Exemplo básico:
+
+button {
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: red;
+}
+
+ 
+
+12. Crie um objeto com informações de um produto (nome, preco, emEstoque). Se emEstoque for true, exiba "Produto disponível"; caso contrário, "Produto indisponível".
+R: const produto = { nome: "Caneca", preco: 25.0, emEstoque: true }; 
+
+console.log(produto.emEstoque ? "Produto disponível" : "Produto indisponível");
+
+ 
+
+13. Crie um objeto pessoa com os atributos nome, peso, altura e temperatura. Faça uma saída que verifica se essa pessoa está ou não com febre.
+R: const pessoa = { nome: "João", peso: 70, altura: 1.75, temperatura: 38.2 }; 
+
+console.log(pessoa.temperatura > 37.5 ? "Está com febre" : "Não está com febre");
+
+ 
+
+ 
+
+14. Crie 2 objetos do tipo livro e peça ao usuário para preenche-los. Depois, imprima na tela o livro com autoria mais antiga, o livro com mais páginas e o livro com autor brasileiro (caso haja).
+R: const livro1 = { autor: "José Silva", ano: 1980, paginas: 200, nacionalidade: "Brasil" }; 
+
+const livro2 = { autor: "Ana Souza", ano: 1975, paginas: 150, nacionalidade: "Portugal" }; 
+
+ 
+
+const maisAntigo = livro1.ano < livro2.ano ? livro1 : livro2; 
+
+const maisPaginas = livro1.paginas > livro2.paginas ? livro1 : livro2; 
+
+const autorBrasileiro = [livro1, livro2].find(l => l.nacionalidade === "Brasil"); 
+
+ 
+
+console.log("Mais antigo:", maisAntigo); 
+
+console.log("Mais páginas:", maisPaginas); 
+
+console.log("Autor brasileiro:", autorBrasileiro || "Nenhum autor brasileiro");
+
+ 
+
+ 
+
+15. Crie um objeto filme que receba do usuário seu nome e classificação. Em seguida, imprima os dados desse filme, informando sua faixa etária classificatória.
+R: const filme = { nome: "Matrix", classificacao: 16 }; 
+
+console.log(`Filme: ${filme.nome}, Classificação: ${filme.classificacao}+ anos`); 
+
+ 
+
+ 
+
+16. Quais as diferenças entre criar uma variável do tipo const, var e let? Cite exemplos.
+R: var: tem escopo de função e pode ser redeclarada.
+
+let: tem escopo de bloco e não permite redeclaração no mesmo escopo.
+
+const: semelhante ao let, mas o valor não pode ser reatribuído após definido.
+Exemplo:
+
+var a = 1;
+let b = 2;
+const c = 3;
+ 
+
+17. Responda no console o que será impresso ou qual erro ocorrerá.
+
+R: 1) x = undefined
+
+15
+
+25
+
+30
+
+100
+
+200
+
+300
+
+100
+
+undefined
+
+undefined
+
+var da função
+
+let da função
+
+const da função
+
+string
+
+undefined
+
+undefined
+
+ 
+
+18. Qual a diferença entre JavaScript e Java?
+
+
+R: JavaScript é uma linguagem interpretada, amplamente usada para páginas web. Java é uma linguagem compilada, fortemente orientada a objetos, usada em desenvolvimento de software mais robusto, como aplicativos desktop e mobile. Apesar do nome parecido, são linguagens completamente diferentes em estrutura e finalidade.
+ 
+
+19. Qual a diferença entre == e === no JavaScript? Dê exemplos práticos.
+R: ==: compara apenas os valores, convertendo tipos se necessário.
+
+===: compara valores e tipos estritamente, sem conversão.
+Exemplo:
+
+5 == "5"   // true  
+5 === "5"  // false
+
+ 
+
+ 
+
+20. O que são operadores lógicos (&&, ||, !) e como eles podem ser usados em condicionais? Exemplifique.
+R: && (E): retorna verdadeiro se ambas as condições forem verdadeiras.
+
+|| (OU): retorna verdadeiro se pelo menos uma condição for verdadeira.
+
+! (NÃO): inverte o valor booleano.
+Exemplo:
+
+if (idade > 18 && habilitado) console.log("Pode dirigir");
+if (choveu || frio) console.log("Leve um casaco");
+if (!fumante) console.log("Não fuma");
+ 
+
+21. É possível adicionar novas propriedades a um objeto depois de criado? Como?
+
+
+R: Sim, você pode incluir novas propriedades a um objeto após a criação, apenas atribuindo o novo valor.
+Exemplo:
+
+const pessoa = { nome: "Carlos" };
+pessoa.idade = 28;
+ 
+
+ 
+
+22. Qual a diferença entre null e undefined no JavaScript?
+
+
+R: undefined: valor padrão de uma variável que foi declarada mas não recebeu valor.
+
+null: valor atribuído de forma intencional para representar "nenhum valor".
+ 
+
+ 
+
+23. O que é um objeto em JavaScript e como ele é declarado? Dê um exemplo básico.
+R: Um objeto em JavaScript é uma estrutura que armazena dados em pares de chave e valor.
+Exemplo:
+
+const aluno = { nome: "Lucas", idade: 22 };
+ 
+
+ 
+
+24. Crie um programa em JS que defina 2 objetos pokemãos, leia os dados desses objetos assumindo que possuem id, nome, tipo (agua, fogo ou terra) e poder (sortear um valor entre 1 e 10 preenchido automático). Logo em seguida, coloque esses dois pokemãos para batalhar e apresente na tela o resultado da luta. Caso um dos pokemãos tenha vantagem elemental de tipo sobre o outro, respeitando (agua ganha de fogo, fogo ganha de terra, terra ganha de agua), o pokemão que possui vantagem deve ganhar 3 pontos de poder durante o cálculo do resultado da luta.
+R: 
+
+function gerarPoder() {
+  return Math.floor(Math.random() * 10) + 1;
+}
+
+
+const pokemonA = {
+  id: parseInt(prompt("Informe o ID do primeiro pokemão:")),
+  nome: prompt("Informe o nome do primeiro pokemão:"),
+  tipo: prompt("Informe o tipo (agua, fogo ou terra):").trim().toLowerCase(),
+  poder: gerarPoder()
+};
+
+
+const pokemonB = {
+  id: parseInt(prompt("Informe o ID do segundo pokemão:")),
+  nome: prompt("Informe o nome do segundo pokemão:"),
+  tipo: prompt("Informe o tipo (agua, fogo ou terra):").trim().toLowerCase(),
+  poder: gerarPoder()
+};
+
+function vantagem(tipoA, tipoB) {
+  return (
+    (tipoA === "agua" && tipoB === "fogo") ||
+    (tipoA === "fogo" && tipoB === "terra") ||
+    (tipoA === "terra" && tipoB === "agua")
+  );
+}
+
+
+let poderA = pokemonA.poder;
+let poderB = pokemonB.poder;
+
+if (vantagem(pokemonA.tipo, pokemonB.tipo)) {
+  poderA += 3;
+} else if (vantagem(pokemonB.tipo, pokemonA.tipo)) {
+  poderB += 3;
+}
+
+
+console.log(pokemonA.nome + " (Poder: " + poderA + ") vs " + pokemonB.nome + " (Poder: " + poderB + ")");
+ 
+if (poderA > poderB) {
+  console.log("Vencedor: " + pokemonA.nome);
+} else if (poderB > poderA) {
+  console.log("Vencedor: " + pokemonB.nome);
+} else {
+  console.log("Empate entre os pokemões.");
+}
